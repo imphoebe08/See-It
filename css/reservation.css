@@ -4,146 +4,165 @@
 @import "./login.css";
 
 /* 共用 */
-main.main{
+
+main.main {
     max-width: 1440px;
+    margin: 0 auto;
 }
+
+
 /* 移除按鍵預設值 */
+
 button {
     text-decoration: none;
     background: none;
     border: none;
-    
 }
-button:focus{
+
+button:focus {
     outline: none;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
-input{
+
+input {
     text-align: center;
 }
 
-/* !!!上面三個袋子的購買按鍵!!! */
-div.big_buy{
-    /* border: 1px solid rebeccapurple; */
 
+/* !!!上面三個袋子的購買按鍵!!! */
+
+div.big_buy {
+    /* border: 1px solid rebeccapurple; */
 }
-button.big_plus > img{
+
+button.big_plus>img {
     vertical-align: bottom;
     width: 30px;
     height: 30px;
-
 }
-p.liter{
+
+p.liter {
     font-family: Pan-Pan;
     font-size: 16px;
 }
-p.bag_price{
+
+p.bag_price {
     font-family: Pan-Pan;
     font-size: 20px;
     color: var(--point_color);
     margin: 0;
 }
-input.big_quantity{
+
+input.big_quantity {
     border: 1px solid var(--main_color);
     width: 50px;
     height: 32px;
     border-radius: 10px;
     vertical-align: bottom;
 }
-button.big_minus > img{
+
+button.big_minus>img {
     width: 30px;
     height: 30px;
     vertical-align: bottom;
 }
-button.big_add_basket{
+
+button.big_add_basket {
     /* border: 1px solid seagreen; */
     display: block;
     margin: 5px auto;
-    padding: 0 ;
+    padding: 0;
 }
-button.big_add_basket > img{
-    height: 35px;
 
+button.big_add_basket>img {
+    height: 35px;
 }
+
+
 /* -------------------結束--------------------- */
+
 
 /* ！！！加購處的購買按鍵！！！ */
 
-div.add_buy{
+div.add_buy {
     /* border: 1px solid rebeccapurple; */
-
 }
-button.add_plus > img{
+
+button.add_plus>img {
     vertical-align: bottom;
     width: 25px;
     height: 25px;
-
 }
-input.add_quantity{
+
+input.add_quantity {
     border: 1px solid var(--main_color);
     width: 50px;
     height: 28px;
     border-radius: 10px;
     vertical-align: bottom;
-    
 }
-button.add_minus > img{
+
+button.add_minus>img {
     width: 25px;
     height: 25px;
     vertical-align: bottom;
 }
-button.add_add_basket{
+
+button.add_add_basket {
     /* border: 1px solid seagreen; */
     display: block;
     margin: 0 auto;
     margin-top: 5px;
-    padding: 0 ;
+    padding: 0;
 }
-button.add_add_basket > img{
+
+button.add_add_basket>img {
     height: 28px;
     position: relative;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
-
 }
-@media screen and (max-width:540px){
-    button.add_minus{
+
+@media screen and (max-width:540px) {
+    button.add_minus {
         padding: 0;
         padding-bottom: 3px;
     }
-    button.add_minus > img{
+    button.add_minus>img {
         width: 20px;
         height: 20px;
     }
-    input.add_quantity{
+    input.add_quantity {
         border: 1px solid var(--main_color);
         width: 45px;
         height: 28px;
         border-radius: 10px;
-        vertical-align: bottom;     
+        vertical-align: bottom;
     }
     button.add_plus {
         padding: 0;
         padding-bottom: 3px;
     }
-    button.add_plus > img{
+    button.add_plus>img {
         vertical-align: bottom;
         width: 20px;
         height: 20px;
     }
-    button.add_add_basket > img{
+    button.add_add_basket>img {
         height: 25px;
-    
     }
-    p.bag_price{
+    p.bag_price {
         font-size: 16px;
     }
 }
+
+
 /* ！！！其他商品的購買框！！！ */
-ul.prodcuts{
+
+ul.prodcuts {
     /* border: 1px solid red; */
     list-style: none;
     width: 100%;
@@ -153,365 +172,419 @@ ul.prodcuts{
     justify-content: center;
 }
 
-li.other_products{
+li.other_products {
     /* border: 2px solid black; */
     margin-top: 20px;
 }
-@media screen and (max-width:540px){
-    li.other_products{
+
+@media screen and (max-width:540px) {
+    li.other_products {
         width: 49%;
     }
 }
-button.products_plus > img{
+
+button.products_plus>img {
     vertical-align: bottom;
     width: 25px;
     height: 25px;
-    
-
 }
-div.prodcuts_name_title{
+
+div.prodcuts_name_title {
     /* border: 1px solid red; */
     text-align: center;
 }
-span.products_name{
+
+span.products_name {
     font-family: xiyuanti;
     font-weight: 600;
     display: inline-block;
     font-size: 1.8rem;
-    
 }
 
-span.prodcuts_name_eng{
+span.prodcuts_name_eng {
     font-family: Pan-Pan;
     font-size: 1.8rem;
 }
-@media screen and (max-width:540px){
-        span.prodcuts_name_eng{
-            display: block;
-        }
+
+@media screen and (max-width:540px) {
+    span.prodcuts_name_eng {
+        display: block;
+    }
 }
-div.products_quantity_bar{
+
+div.products_quantity_bar {
     /* border: 1px solid darkred; */
     text-align: center;
 }
-input.products_quantity{
+
+input.products_quantity {
     border: 1px solid var(--main_color);
     width: 50px;
     height: 28px;
     border-radius: 10px;
     vertical-align: bottom;
     display: inline-block;
-    
 }
-button.products_minus > img{
+
+button.products_minus>img {
     width: 25px;
     height: 25px;
     vertical-align: bottom;
 }
-span.products_add_basket{
+
+span.products_add_basket {
     width: 100%;
     /* border: 1px solid seagreen; */
     display: block;
     margin-top: 5px;
     cursor: pointer;
 }
-span.products_add_basket > img{
-    width:150px;
+
+span.products_add_basket>img {
+    width: 150px;
     height: 28px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-
 }
+
 
 /* 內容 */
 
+
 /* 選擇洗衣袋標題 */
-div.bags_title{
+
+div.bags_title {
     margin-top: 50px;
     margin-left: 50px;
     /* border: 1px solid saddlebrown; */
 }
-@media screen and (max-width:866px){
-    div.bags_title{
+
+@media screen and (max-width:866px) {
+    div.bags_title {
         text-align: center;
         margin: 30px 0 10px 0;
     }
 }
+
+
 /* 袋子們 */
-div.bags{
+
+div.bags {
     /* border: 1px solid darkblue; */
     display: flex;
     text-align: center;
 }
+
+
 /* S號 */
 
-div.bag_s{
+div.bag_s {
     /* border: 1px solid gold; */
 }
-div.bag_s_title{
+
+div.bag_s_title {
     /* border: 1px solid red; */
 }
 
-div.bag_s_pic{
+div.bag_s_pic {
     /* border: 1px solid black; */
     width: 100%;
     height: fit-content;
     margin: auto;
     padding: 15% 20%;
 }
-div.bag_s_pic > img{
+
+div.bag_s_pic>img {
     /* border: 1px solid blue; */
     width: 100%;
 }
 
-@media screen and (max-width:866px){
-    div.bag_s_pic{
+@media screen and (max-width:866px) {
+    div.bag_s_pic {
         width: 50%;
         padding: 0
     }
 }
+
+
 /* M號 */
-div.bag_m_title{
+
+div.bag_m_title {
     /* border: 1px solid steelblue; */
 }
-div.bag_m{
-    /* border: 1px solid red; */
 
+div.bag_m {
+    /* border: 1px solid red; */
 }
-div.bag_m_pic{
+
+div.bag_m_pic {
     /* border: 1px solid black; */
     width: 100%;
     height: fit-content;
     margin: auto;
     padding: 5% 10%;
 }
-div.bag_m_pic > img{
+
+div.bag_m_pic>img {
     /* border: 1px solid green; */
     width: 100%;
-
 }
-@media screen and (max-width:866px){
-    div.bag_m_pic{
+
+@media screen and (max-width:866px) {
+    div.bag_m_pic {
         width: 50%;
         padding: 0
     }
 }
+
+
 /* L號 */
-div.bag_l_title{
+
+div.bag_l_title {
     /* border: 1px solid darkblue; */
 }
-div.bag_l{
+
+div.bag_l {
     /* border: 1px solid blueviolet; */
 }
 
-div.bag_l_pic{
+div.bag_l_pic {
     /* border: 1px solid black; */
     width: 100%;
 }
-div.bag_l_pic > img{
+
+div.bag_l_pic>img {
     /* border: 1px solid rosybrown; */
     width: 90%;
     margin: 0 auto;
 }
 
-@media screen and (max-width:866px){
-    div.bag_l_pic{
+@media screen and (max-width:866px) {
+    div.bag_l_pic {
         width: 50%;
         padding: 0;
         margin: 0 auto
-        
     }
-    div.bag_l_pic > img{
+    div.bag_l_pic>img {
         width: 100%;
     }
 }
+
+
 /* 升級洗劑 */
-div.detergent_upgrade{
+
+div.detergent_upgrade {
     /* border: 1px solid salmon; */
     text-align: center;
     width: 100%;
     margin-top: 60px;
     margin-bottom: 100px;
 }
-fieldset{
+
+fieldset {
     border: 3px solid var(--point_color);
     width: 60%;
     margin: 0 auto;
 }
-legend{
+
+legend {
     font-size: 3rem;
     font-family: Pan-Pan;
     width: 200px;
     color: var(--point_color);
 }
-div.add_detergent{
+
+div.add_detergent {
     /* border: 1px solid black; */
     display: inline-block;
     width: 30%;
     position: relative;
 }
 
-div.add_detergent > img{
+div.add_detergent>img {
     width: 100%;
 }
-div.add_softner{
+
+div.add_softner {
     /* border: 1px solid black; */
     display: inline-block;
     width: 30%;
     position: relative;
     margin-bottom: 20px;
 }
-div.add_softner > img{
+
+div.add_softner>img {
     width: 100%;
 }
 
-div.add_softner{
+div.add_softner {
     display: inline-block;
 }
 
-@media screen and (max-width:866px){
-    fieldset{
+@media screen and (max-width:866px) {
+    fieldset {
         width: 95%;
     }
-    div.detergent_upgrade{
+    div.detergent_upgrade {
         margin: 0;
         margin-top: 30px;
     }
 }
 
+
 /* 加購相關商品標題 */
-div.products_title{
+
+div.products_title {
     /* border: 1px solid wheat */
     margin-left: 50px;
 }
 
 
-
 /* 加購商品選單 */
 
-div.series_button{
+div.series_button {
     /* border: 1px solid red; */
     width: 400px;
     height: 50px;
     display: flex;
     justify-content: start;
     margin-left: 50px;
-
 }
-ul.tab_list{
+
+ul.tab_list {
     /* border:  1px solid black; */
     width: 400px;
     height: 50px;
     display: flex;
     padding: 0;
 }
-li > a > img{
+
+li>a>img {
     width: 200px;
     height: 50px;
 }
-button.ecostore_series_icon{
-    /* border: 1px solid saddlebrown; */
-    width:  150px;
-    height: 100%;
 
+button.ecostore_series_icon {
+    /* border: 1px solid saddlebrown; */
+    width: 150px;
+    height: 100%;
 }
-button.ecostore_series_icon > img{
+
+button.ecostore_series_icon>img {
     height: 100%;
     width: 100%;
 }
 
-button.washing_items_icon{
+button.washing_items_icon {
     /* border: 1px solid saddlebrown; */
-    width:  150px;
+    width: 150px;
     height: 100;
-
 }
-button.washing_items_icon > img{
+
+button.washing_items_icon>img {
     height: 100%;
     width: 100%;
 }
 
-@media screen and (max-width:866px){
-    div.products_title{
-        margin:30px 0 10px 0;
+@media screen and (max-width:866px) {
+    div.products_title {
+        margin: 30px 0 10px 0;
         text-align: center;
     }
-    div.series_button{
+    div.series_button {
         justify-content: center;
         width: 100%;
         margin: 0;
-        
     }
 }
+
+
 /* 其他產品 */
-div.products_card{
+
+div.products_card {
     /* border: 1px solid red; */
     width: 250px;
 }
-div.product_img{
+
+div.product_img {
     /* border:1px solid blue; */
     width: 250px;
     height: fit-content;
-    
 }
-@media screen and (max-width:540px){
-    div.products_card{
+
+@media screen and (max-width:540px) {
+    div.products_card {
         width: 100%;
     }
-    div.product_img{
+    div.product_img {
         width: 200px;
         margin: 0 auto;
     }
 }
-div.product_img > img{
+
+div.product_img>img {
     height: 100%;
     width: 100%;
 }
 
 
 /* 頁籤切換 */
-div.content_container{
+
+div.content_container {
     position: relative;
     border: 1px solid transparent;
     width: 100%;
-  }
-  div.content1, div.content2{
+}
+
+div.content1,
+div.content2 {
     /* 預設的定位 */
     position: absolute;
     top: 0;
     left: 0;
     display: none;
+}
 
-  }
-  
-  /* 該區塊出現時，修改相關樣式 */
-  div.content1.-on, div.content2.-on{
+
+/* 該區塊出現時，修改相關樣式 */
+
+div.content1.-on,
+div.content2.-on {
     position: static;
     display: block;
-  }
+}
+
 
 /* 下一步 */
-div.next_step{
+
+div.next_step {
     /* border: 1px solid red; */
     text-align: right;
     margin-top: 20px;
     transform: translateX(-5%);
 }
-div.next_step > a > img{
+
+div.next_step>a>img {
     width: 140px;
     height: 40px;
 }
 
+
 /* 購物車 */
+
+
 /* 展開的按鈕 */
 
-  .basket{
-      width: 40px;
-      margin-top: 5px;
-  }
+.basket {
+    width: 40px;
+    margin-top: 5px;
+}
+
+
 /* 會飛的小圈圈 */
-  .count {
+
+.count {
     position: absolute;
     height: 20px;
     width: 20px;
@@ -527,37 +600,41 @@ div.next_step > a > img{
     border-radius: 400px;
     transition: all ease 1s;
     z-index: 1;
-  }
+}
 
 
 /* 購物車 */
+
 .car {
-  position: fixed;
-  bottom: 25%;
-  right: 0;
-  margin: auto;
-  border-radius: 180px;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-  margin: 15px;
-  font-size: 20px;
-  background-color: var(--main_color);
-  color: #efefef;
-  z-index: 10;
+    position: fixed;
+    bottom: 25%;
+    right: 0;
+    margin: auto;
+    border-radius: 180px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin: 15px;
+    font-size: 20px;
+    background-color: var(--main_color);
+    color: #efefef;
+    z-index: 10;
 }
-@media screen and (max-width:768px){
-    .car{
+
+@media screen and (max-width:768px) {
+    .car {
         width: 40px;
         height: 40px;
     }
 }
 
+
 /* 購物車明細 */
-  .right_sidebar{
+
+.right_sidebar {
     position: fixed;
     top: 50%;
     right: 0;
@@ -570,25 +647,31 @@ div.next_step > a > img{
     border-radius: 10px 0 0 10px;
     z-index: 10;
     transition: transform 1s ease-in-out;
-  }
-  /* 開啟側邊欄 */
-  .open{
+}
+
+
+/* 開啟側邊欄 */
+
+.open {
     transform: translateX(0);
-    
-  }
-  @media screen and (max-width:768px){
-    .car{
+}
+
+@media screen and (max-width:768px) {
+    .car {
         width: 40px;
         height: 40px;
         bottom: 16%;
     }
-    img.basket{
+    img.basket {
         width: 30px;
         height: 30px;
     }
 }
-  /* 關閉按鈕 */
-  .btn_close{
+
+
+/* 關閉按鈕 */
+
+.btn_close {
     background: none;
     position: absolute;
     left: 5px;
@@ -596,8 +679,10 @@ div.next_step > a > img{
     transform: translate(0%, -50%);
     color: white;
     border: 0;
-    font-size: 1rem; /* 16px */
-    width: 1.8em;    /* 相對於這個元素的文字大小 */
+    font-size: 1rem;
+    /* 16px */
+    width: 1.8em;
+    /* 相對於這個元素的文字大小 */
     padding: 4px 0;
     line-height: 1.6;
     display: inline-block;
@@ -605,31 +690,33 @@ div.next_step > a > img{
     border-radius: 5px 0 0 5px;
     text-align: center;
     outline: none;
-  }
+}
 
-  #shoppingList{
+#shoppingList {
     font-size: 1.6rem;
     margin-top: 10px;
-      /* border: 1px solid red; */
-      color: white;
-      padding: 0;
-  }
-  #shoppingList > li:first-child{
-      margin-top: 30px;
-
+    /* border: 1px solid red; */
+    color: white;
+    padding: 0;
 }
-  #shoppingList > li{
-      /* border: 1px solid black; */
-      width: 100%;
-      list-style: none;
-      border-bottom: lightgray 1px solid;
-  }
-  div.itemPrice{
-      /* border: red 1px solid; */
 
-  }
-  div.removeItem{
+#shoppingList>li:first-child {
+    margin-top: 30px;
+}
+
+#shoppingList>li {
+    /* border: 1px solid black; */
+    width: 100%;
+    list-style: none;
+    border-bottom: lightgray 1px solid;
+}
+
+div.itemPrice {
+    /* border: red 1px solid; */
+}
+
+div.removeItem {
     /* border: red 1px solid; */
     width: 15px;
     margin-left: auto;
-  }
+}
