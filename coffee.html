@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See It - 咖啡空間</title>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/coffee.css">
+</head>
+<body>
+    <!-- -------login開始------ -->
+    <div id="login_pop">
+        <button id="login_close"><img src="./img/close.svg"></button>
+        <div class="login_box">
+            <div id="logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt="">
+            </div>
+            <form id="login"action="">
+                <input id="id" type="text" placeholder="帳號"><br>
+                <input id="password" type="password" placeholder="密碼"><br>
+                <input id="loginSubmit" type="submit" value="登入"><br>
+                <div id="outerLogin">
+                    <button id="facebbokLogin">使用Facebook登入</button><br>
+                    <button id="googleLogin">Ｇoogle登入</button>
+                </div>
+            </form>
+            <div id="wantRegister">
+                <a href="">沒有帳號想要註冊嗎？</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------login結束--------- -->
+
+    <!-- 頁首 -->
+    <header class="header">   
+        <!-- logo -->
+        <nav class="menu">
+            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+            <div class="menu-logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt=""></a></div>
+        
+            <!-- 選單 -->
+            
+                <ul id="menuUl" class="active">
+                    <li class="current-active"><a href="./reservation.html">洗衣預約</a></li>
+                    <li><a href="./selfwashing.html">半自助洗衣</a></li>
+                    <li class="focus"><a href="./coffee.html">咖啡空間</a></li>
+                    <li><a href="./intro.html">店面資訊</a></li>
+                </ul>
+                
+            <div class="membership">
+                <a href="#"><img src="./img/membership.svg" alt=""></a>
+            </div>
+                    
+        </nav>
+    </header>
+
+    <!-- 內文 -->
+    <main>
+        <!-- 輪播 -->
+        <div class="owl-carousel owl-theme">
+            <div><img src="./img/coffee/coffee_banner_1.jpg" alt="..."></div>
+            <div><img src="./img/coffee/coffee_banner_2.jpg" alt="..."></div>
+            <div><img src="./img/coffee/coffee_banner_3.jpg" alt="..."></div>
+        </div>
+
+        <!-- 整體-->
+
+        <!-- ！！！空間服務！！！ -->
+        <div class="service_title"><h2>空間服務</h2></div>
+        <span class="line"></span>
+        <div class="service">
+            <div class="service_pic"><div class="service_pic_container"><img src="./img/coffee/noSomoke.svg" alt=""></div><h4 class="service_info">禁止吸煙</h4></div>
+            <div class="service_pic"><div class="service_pic_container"><img src="./img/coffee/plugSocket.svg" alt=""></div><h4 class="service_info">提供插座</h4></div>
+            <div class="service_pic"><div class="service_pic_container" style="padding-top:10px ;"><img src="./img/coffee/wifi.svg" alt=""></div><h4 class="service_info">免費Wi-Fi</h4></div>
+            <div class="service_pic"><div class="service_pic_container"><img src="./img/coffee/noTimeLimitation.svg" alt=""></div><h4 class="service_info">不限時</h4></div>
+            <div class="service_pic"><div class="service_pic_container"><img src="./img/coffee/petFridendly.svg" alt=""></div><h4 class="service_info">寵物友善</h4></div>
+        </div>
+
+        <!-- 本月咖啡 -->
+        <div class="service_title"><h2>本月限定手沖咖啡</h2></div>
+        <span class="line"></span>
+        <div class="monthCoffee">
+            <div class="ad_pic"><div><img src="./img/coffee/monthCoffee.jpg" alt=""></div></div>
+            <div class="ad_text">
+                <h3>台灣 阿里山</h3>
+                <h2>特富野小農 鐵比卡種 高海拔特選豆</h2>
+                <span class="line"></span>
+                <h4>處理法：水洗<br>風味：太妃糖、烏龍茶</h4><br>
+                <div><label>烘焙度：</label><img class="coffeeBean" src="./img/coffee/coffeeBean.svg" alt=""><img class="coffeeBean" src="./img/coffee/coffeeBean.svg" alt=""><img class="coffeeBean" src="./img/coffee/coffeeBean.svg" alt=""></div>
+                <div><label>酸度：</label></label><img class="coffeeBean" src="./img/coffee/coffeeBean.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="service_title"><h2>商品介紹</h2></div>
+        <span class="line"></span>
+        <div class="main_menu">
+         <!-- 左側咖啡區 -->
+            <div class="menu_coffee">
+                <a href="./menu.html"><img src="./img/coffee/coffee.jpg" alt="">
+                <p class="drink">飲品</p>
+                <a href="./menu.html"><div class="coffee_cover"><p class="drink">飲品</p></div></a>
+                
+            </div>
+        <!-- 右側 -->
+            <div class="right_side">
+                <!--蛋糕 -->
+                <div class="menu_cakes">
+                    <a href="./menu.html#cake"><img src="./img/coffee/pastries.jpg" alt="">
+                    <p class="cakes">甜點</p>
+                    <div class="cakes_cover"><p class="cakes">甜點</p></div></a>
+
+                </div>
+            <!-- 輕食 -->
+                <div class="menu_meal">
+                    <a href="./menu.html#meal"><img src="./img/coffee/meal.jpg" alt="">
+                    <p class="meal">輕食</p>
+                    <div class="meal_cover"><p class="meal">輕食</p></div></a>
+                </div>
+            </div>
+        </div>
+        <!-- 店面資訊（手機版） -->
+        <div id="location">
+            <a href="./intro.html"><img src="./img/coffee/location.svg" alt=""></a>
+        </div>
+    </main>
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <ol class="footerlist">
+            <li><a href="./reservation.html">洗衣預約</a></li>
+            <li><a href="./selfwashing.html">半自助洗衣</a></li>
+            <li><a href="./coffee.html">咖啡空間</a></li>
+            <li><a href="./intro.html">店面資訊</a></li>
+        </ol>
+        <div class="list_sns">
+            <a href="#"><img src="./img/facebook_icon.svg" alt=""></a>
+            <a href="#"><img src="./img/line_icon.svg" alt=""></a>
+            <a href="#"><img src="./img/instagram_icon.svg" alt=""></a>
+       </div>
+       <p class="footer_text">© All Rights Reserved | See It 2020</p>
+</footer>
+
+
+</script>
+ <!-- JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="./js/owl.carousel.min.js"></script>
+ <script src="./js/hanburger.js"></script>
+ <script src="./js/login.js"></script>
+ 
+ <script>
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+        touchDrag:true,
+        autoplay:true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause:true,
+
+    });
+</script>
+
+</body>
+</html>

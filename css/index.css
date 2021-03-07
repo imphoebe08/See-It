@@ -1,0 +1,1008 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./common.css";
+@import "./login.css";
+@import "./go_top_btn.css";
+/* ---------------------------------------- */
+
+/* 內容 */
+main.main{
+    /* border:1px solid forestgreen; */
+    min-width: 1200;
+}
+body{
+    overflow-x: hidden;
+}
+/* 橫幅 */
+div.banner{
+    position: relative;
+    margin: 0;
+}
+div.banner > img{
+    width: 100%;
+    min-height: calc(100% - var(--header_height));
+}
+div.banner > a{
+    /* border: 1px solid red; */
+    background-color: var(--main_color);
+    margin-top: 15px;
+    height: 55px;
+    width: 200px;
+    border-radius: 90px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:55%;
+    z-index: 2;
+    color: white;
+    font-family: Pan-Pan;
+    font-size: 2.4rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 6rem;
+    box-shadow:3px 3px 9px rgb(146, 135, 135);
+    text-decoration: none;
+}
+
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+        main.main{
+        min-width: 960px;}
+
+        div.banner{
+            position: relative;
+            min-width: 960px;
+        }
+        div.banner > img{
+            width: 100%;
+        }
+        div.banner > a{
+            font-size: 2.2rem;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px){
+        main.main{
+        min-width: 720px;}
+
+        div.banner{
+            position: relative;
+            min-width: 720px;
+            overflow: hidden;
+        }
+        div.banner > img{
+            width: 150%;
+            position: relative;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        div.banner > a{
+            font-size: 2rem;
+        }
+
+    }
+
+    @media screen and (max-width: 765px){
+        main.main{
+        min-width: 100%;}
+
+        div.banner{
+            position: relative;
+            min-width: 100%;
+            overflow: hidden;
+        }
+        div.banner > img{
+            width: 180%;
+            position: relative;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        div.banner > a{
+            font-size: 1.8rem;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+
+        }
+    }
+
+/* ---------------------結束------------------- */
+
+/* ！！！ecostore介紹！！！ */
+div.ecostore_ad{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    height: 680px;
+}
+/*  左欄 */
+div.ecostore_left{
+    /* border: 1px solid red; */
+    min-width: 49%;
+}
+
+div.ecostore_square{
+    border: 5px solid var(--main_color);
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 30%;
+    top: 15%;
+
+}
+
+div.ecostore_pic{
+    /* border: 5px solid tomato; */
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.ecostore_pic_mb{
+    display: none;
+}
+
+div.ecostore_pic > img{
+    max-height: 100%;
+}
+
+/* 右欄 */
+
+div.ecostore_right{
+    /* border: 1px solid darkblue; */
+    min-width: 49%;
+    position: relative;
+}
+div.ecostore_title{
+    /* border: 1px solid darkgoldenrod; */
+    position: absolute;
+    top: 30%;
+    left:0;
+    z-index: 200;
+    background-color: rgba(255, 255, 255, .5)
+    
+}
+    .ecostore_title_mb{
+        display: none;
+    }
+
+div.ecostore_text{
+    /* border: 1px solid darkcyan; */
+    width: fit-content;
+    line-height: 35px;
+    padding: 30px 10px;
+    position: absolute;
+    top:40%;
+    text-align: left;
+    z-index: 200;
+    background-color: white;
+}
+
+@media screen and (min-width:1100px) and (max-width:1400px){
+    div.ecostore_left{
+        position: relative;
+        transform: translateX(-20%);
+    }
+    div.ecostore_title{
+        max-width: 400px;
+        text-align: center;
+        top:25%;
+        left: 20%;
+    }
+    div.ecostore_text{
+        left:10%;
+    }
+    div.ecostore_pic > img{
+        max-height: 95%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1099px){
+    div.ecostore_title_mb{
+        /* border: 1px solid red; */
+        display: block;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 5%;
+    }
+    div.ecostore_title{
+        display: none;
+    }
+    div.ecostore_ad{
+        flex-wrap: wrap;
+        align-content: flex-start;
+        /* border: 2px solid red; */
+        height: fit-content;
+    }
+    div.ecostore_left{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+        
+    }
+    div.ecostore_right{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: fit-content;
+        margin-top: 5px;
+
+    }
+    div.ecostore_square{
+        border: 5px solid transparent;
+        position: static;
+        width: 100%;
+    
+    }
+    div.ecostore_pic{
+        /* border: 5px solid tomato; */
+        position: static;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    div.ecostore_text{
+        position: static;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+}
+@media screen and (max-width:767px){
+    div.ecostore_title_mb{
+        /* border: 1px solid red; */
+        display: block;
+        width: 300px;
+        position: relative;
+        text-align: center;
+        margin-top: 5%;
+        padding: 0px 10px;
+        margin: 5% auto 0 auto;
+    }
+    div.ecostore_title{
+        display: none;
+    }
+    div.ecostore_ad{
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: fit-content;
+    }
+    div.ecostore_left{
+        /* border: 1px solid red; */
+        width: 90%;
+        height: fit-content;
+        overflow: hidden;
+        
+    }
+    div.ecostore_right{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: fit-content;
+        margin-top: 5px;
+
+    }
+    div.ecostore_square{
+        border: 5px solid transparent;
+        position: static;
+        width: 100%;
+    
+    }
+    div.ecostore_pic{
+        /* border: 5px solid tomato; */
+        position: static;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    div.ecostore_pic > img{
+        height: fit-content;
+    }
+    div.ecostore_text{
+        position: static;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+}
+/* --------------------結束-------------------- */
+
+/* 標題：預約洗衣 */
+div.title1{
+    /* border: 1px solid pink; */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+    span.line_left{
+        border: 1px solid black;
+        height: 1px;
+        width: 20%;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    h1.reservation_box{
+        display: inline-block;
+    }
+    span.line_right{
+        border: 1px solid black;
+        height: 1px;
+        width: 20%;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+
+/* ------------------結束---------------------- */
+
+/* !!!圖片靠左CSS!!!*/
+
+    div.content_left{
+        /* border: 1px solid darkcyan; */
+        display: flex;
+        align-content: space-around;
+        height: 680px;
+
+    }
+
+    div.title_left_mb{
+        display: none;
+    }
+    /* 左欄 */
+    div.content_left_leftside{
+        /* border: 1px solid red; */
+        width: 49%;
+        position: relative;
+    }
+
+    div.square_left{
+        border: 5px solid var(--main_color);
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        right: 15%;
+        top: 10%;
+    }
+    
+    div.content_left_pic{
+        /* border: 5px solid tomato; */
+        display: inline-block;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+    }
+
+    div.content_left_pic > img{
+        width: 100%;
+    }
+    /* 右欄 */
+    div.content_left_rightside{
+        /* border: 1px solid slateblue; */
+        width: 49%;
+        vertical-align: top;
+        position: relative;
+    }
+
+    div.content_left_text{
+        /* border: 4px red solid; */
+        display: block;
+        position: absolute;
+        top:25%;
+        width: 87%;
+        
+    }
+    
+    a.button_left{
+        /* border: 1px solid red; */
+        position: absolute;
+        right:0px;
+        bottom: -70px;
+    }
+    
+    a.button_left > img{
+        width: 138px;
+        height: 40px;
+    }
+
+    @media screen and (min-width:992px) and (max-width:1050px){
+        div.content_left{
+            height: 500px;
+            text-align: top;
+        }
+        div.square_left{
+            border: 5px solid transparent;
+            
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px){
+        div.content_left{
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        div.content_left_leftside{
+            /* border: 1px solid tomato; */
+            width: 100%;
+            height: 400px;
+        }
+        
+        div.content_left_rightside{
+            /* border: 1px solid green; */
+            width: 100%;
+        }
+        div.content_left_text{
+            /* border:1px solid red; */
+            position: static;
+            text-align: center;
+            padding: 0 23%;
+        }
+        
+        div.square_left{
+            border: 5px solid transparent;
+        }
+        div.title_left_mb{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 10%;
+        }
+        div.content_left_text > h2{
+            display: none;
+        }
+        div.content_left_text > a{
+            width: 100%;
+            /* border: 1px solid red; */
+            margin:0
+        }
+        div.content_left_text > a > img{
+            position: relative;
+            left: -3%;
+        }
+        div.square_left{
+            /* border: 1px solid yellow; */
+            position: static;
+            width: 100%;
+            text-align: center;
+        }
+        div.content_left_pic{
+            position: static;
+            
+        }
+        
+    }
+    @media screen and (max-width:767px){
+        div.content_left{
+            flex-wrap: wrap;
+            align-content: flex-start;
+            height: fit-content;
+        }
+        div.content_left_leftside{
+            /* border: 1px solid tomato; */
+            width: 100%;
+        }
+        div.content_left_rightside{
+            /* border: 1px solid green; */
+            width: 100%;
+    
+        }
+        div.content_left_text{
+            /* border:1px solid red; */
+            position: static;
+            text-align: left;
+            margin: 0 auto;
+
+        }
+        div.content_left_text > h4{
+            padding: 10px;
+        }
+        div.square_left{
+            border: 5px solid transparent;
+        }
+        div.title_left_mb{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 10%;
+        }
+        div.content_left_text > h2{
+            display: none;
+        }
+        div.content_left_text > a{
+            width: 100%;
+            /* border: 1px solid red; */
+            margin-left:35%;
+            position: static;
+            
+        }
+        div.content_left_text > a > img{
+            width: 30%;
+
+        }
+        div.square_left{
+            /* border: 1px solid yellow; */
+            position: static;
+            width: 100%;
+            text-align: center;
+        }
+        div.content_left_pic{
+            position: static;
+        }
+        
+    }
+/* -------------------結束--------------------- */
+
+
+/* !!!See It 看見你的日常所需!!! */
+div.content3{
+    /* border: 1px solid darkblue; */
+    text-align: center;
+    padding-top: 50px;
+}
+div.content3 > h4{
+    line-height: 30px;
+}
+
+/* -------------------結束--------------------- */
+
+/* ！！！預約四步驟！！！ */
+div.foursteps{
+    /* border: 1px solid darkcyan; */
+    border-radius: 20px;
+    height: 1750px;
+    background-color:hsla(0, 0%, 0%, 0.05);
+    width: 960px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    div.foursteps{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:767px){
+    div.foursteps{
+        width: 90%;
+        height: fit-content;
+    }
+}
+    /* !!!StepLeft!!! */
+    div.stepLeft{
+        /* border: 1px solid red; */
+        display: flex;
+        height: 400px;
+        font-family: Pan-Pan;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.stepLeft_pic{
+        width: 300px;
+        height: 300px;
+        /* border: 1px solid rgb(119, 87, 65); */
+        border-radius: 180px;
+        overflow: hidden;
+    }
+    
+    div.stepLeft_pic > img{
+        /* width: 100%; */
+        height: 100%;
+    }
+    div.stepLeft_text{
+        /* border: 1px solid blue; */
+        display: inline-block;
+        width: 300px;
+        margin-left: 30px;
+        font-size: 3rem;
+        font-weight: 100;
+        color: var(--main_color);
+        text-align: left;
+        height: fit-content;
+    }
+    span.stepLeft_line{
+        border: 1px solid var(--main_color);
+        border-radius: 180px;
+        display: inline-block;
+        width: 200px;
+        position: absolute;
+        left: 0;
+        top: 43px;    
+    }
+
+    p.stepLeft_content{
+        color: black;
+        font-size: 18px;
+        margin-left: 16px;
+        font-family: xiyuanti;
+        font-weight: 600;
+    }
+
+    a.stepLeft_reservation_button{
+        position: absolute;
+        right: -100px;
+        top: 100px;
+    }
+
+    @media screen and (max-width:767px){
+        div.stepLeft{
+            height: fit-content;
+            padding: 10% 0%;
+        }
+        
+        div.stepLeft_pic{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+        
+        div.stepLeft_text{
+            width: 49%;
+            height: fit-content;
+            font-size: 2.5rem;
+            margin-left: 5%;
+        }
+        span.stepLeft_line{
+            border: 1px solid var(--main_color);
+            width: 50%;
+            top: 32px;
+        }
+    
+        p.stepLeft_content{
+            font-size: 1.5rem;
+        }
+    
+        a.stepLeft_reservation_button{
+            display: none;
+        }
+    }
+/* ---------------------結束------------------- */
+
+    /* !!!StepRight!!! */
+    
+    div.stepRight{
+        /* border: 1px solid red; */
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    div.stepRight_pic{
+        width: 300px;
+        height: 300px;
+        /* border: 1px solid rgb(119, 87, 65); */
+        border-radius: 180px;
+        overflow: hidden;
+        
+    }
+    div.stepRight_pic >img{
+        /* width: 100%; */
+        height: 100%;
+    }
+    div.stepRight_text{
+        /* border: 1px solid blue; */
+        font-size: 30px;
+        font-weight: 100;
+        font-family: Pan-Pan;
+        color: var(--main_color);
+        position: relative;
+        text-align: left;
+        margin-right: 50px;
+
+    }
+    span.stepRight_line{
+        border: 1px solid var(--main_color);
+        border-radius: 180px;
+        display: inline-block;
+        width: 200px;
+        position: absolute;
+        left: 0;
+        top: 43px;      
+    }
+
+    p.stepRight_content{
+        color: black;
+        font-size: 18px;
+        margin-left: 16px;
+        font-family: xiyuanti;
+        font-weight: 600;
+    }
+    div.stepRight_size{
+        font-family: Pan-Pan;
+        text-align: left;
+        color: var(--point_color);
+        font-size: 1.5rem;
+    }
+
+    /* !!!stepRight MB RWD!!! */
+    @media screen and (max-width:767px){
+        div.stepRight{
+            height: fit-content;
+            padding: 10% 0;
+        }
+        
+        div.stepRight_pic{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+        
+        div.stepRight_text{
+            width: 49%;
+            height: fit-content;
+            font-size: 2.5rem;
+            margin-right:1%;
+        }
+        div.stepRight_size{
+            font-size: 1rem;
+            text-align: center;
+        }
+        span.stepRight_line{
+            border: 1px solid var(--main_color);
+            width: 50%;
+            top: 32px;
+        }
+    
+        p.stepRight_content{
+            font-size: 1.5rem;
+        }
+
+    }
+/* ---------------------結束------------------- */
+
+
+ /* 一個袋子換一身輕鬆 : 圖片*/
+        div.content_driver_pic{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        div.content_driver_pic > img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+    @media screen and (min-width:768px) and (max-width:991px){
+        div.content_driver_pic{
+            position: static;
+        } 
+    }  
+    @media screen and (max-width:767px){
+        div.content_driver_pic{
+            position: static;
+        }
+    }
+/* 店內服務 */
+
+
+/* 圖片靠右ＣＳＳ */
+    div.content_right{
+        /* border: 1px solid darkblue; */
+        display: flex;
+        align-content: space-around;
+        height: 680px;
+        align-items: center;
+    }
+    div.title_right_mb{
+        display: none;
+    }
+        /* 文字 */
+        div.content_right_rightside{
+            /* border: 1px solid red; */
+            width: 49%;
+        }
+
+        div.content_right_text{
+            /* border: 4px red solid; */
+            text-align: left;
+            padding-left: 23%;
+        }
+        
+        div.content_right_text > a{
+            /* border: 1px solid red; */
+            
+        }
+        div.content_right_text > a > img{
+            width: 138px;
+            height: 40px;
+            margin-top:20px
+        }
+
+        /*  圖片 */
+        div.content_right_leftside{
+            /* border: 1px solid slateblue; */
+            width: 49%;
+        }
+        
+        div.square_right{
+            border: 5px solid var(--main_color);
+            height: 400px;
+            width: 400px;
+            position: relative;
+            left: 15%
+        }
+
+        div.content_right_pic{
+            /* border: 5px solid tomato; */
+            display: block;
+            position: absolute;
+            left: 10%;
+            top:10%;
+            height: 400px;
+            width: 400px; 
+        }
+    
+        div.content_right_pic > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media screen and (min-width:992px) and (max-width:1050px){
+            div.content_right{
+                /* border: 1px solid red; */
+                height: 500px;
+                padding-right: 5%;
+                justify-content: center;
+            }
+            div.square_right{
+                border: 5px solid transparent;
+                position: relative;
+                
+            }
+            div.square_right{
+                position: static;
+            }
+            div.content_right_pic{
+                position: static;
+                width: fit-content;
+
+                
+            }
+            div.content_right_rightside{
+                /* border: 1px solid red; */
+            }
+            div.content_right_leftside{
+                /* border: 1px solid black; */
+                width: fit-content;
+            }
+            div.content_right_text{
+                padding: 0;
+                padding-left: 5%;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:991px){
+            div.title_right_mb{
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 10%;
+            }
+            div.content_right{
+                flex-wrap: wrap-reverse;
+                align-content: flex-start;
+                justify-content: center;
+            }
+            div.content_right_rightside{
+                width: 100%;
+                text-align: center;
+            }
+            div.content_right_text{
+                /* border:5px solid red; */
+                width: fit-content;
+                padding: 0 20%;
+
+            }
+            
+            div.content_right_text > h2{
+                display: none;
+            }
+            div.content_right_text > a{
+                width: fit-content;
+                /* border: 1px solid red; */
+            }
+            div.content_right_text > a > img{
+                position: relative;
+                width: 100%;
+            }
+
+            div.content_right_leftside{
+                /* border: 5px solid tomato; */
+                width: 100%;
+                
+            }
+            div.square_right{
+                border: 5px solid transparent;
+                width: fit-content;
+                position: static;
+                margin: 0 auto;
+            }
+            div.content_right_pic{
+                /* border: 1px solid firebrick; */
+                position: static;
+                height: 100%;
+                
+            }
+        }
+        @media screen and (max-width:767px){
+            div.content_right{
+                flex-wrap: wrap-reverse;
+                align-content: center;
+                width: fit-content;
+                justify-content: center;
+
+            }
+            div.content_right_rightside{
+                width: 100%;
+            }
+            div.content_right_text{
+                position: static;
+                text-align: center;
+                padding: 0px 30px;
+            }
+            div.content_right_text > h4{
+                padding: 10px;
+            }
+            div.square_right{
+                border: 5px solid transparent;
+            }
+            div.title_right_mb{
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 10%;
+            }
+            div.content_right_text > h2{
+                display: none;
+            }
+            div.content_right_text > a{
+                width: 100%;
+                margin:0;
+                position: static;
+            }
+            div.content_right_text > a > img{
+                width: 30%;
+            }
+            div.content_right_leftside{
+                position: static;
+                width: fit-content;
+            }
+
+            div.square_right{
+                position: static;
+                width: 100%;
+                text-align: center;
+            }
+            div.content_right_pic{
+                position: static;
+            }
+        }
+        
+    /* 誰說洗衣服不能愜意：圖片 */
+    div.content_coffee_pic{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    div.content_coffee_pic > img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+    @media screen and (min-width:768px) and (max-width:991px){
+        div.content_coffee_pic{
+            position: static;
+        } 
+    }  
+    @media screen and (max-width:767px){
+        div.content_coffee_pic{
+            position: static;
+        }
+}
+
+
+

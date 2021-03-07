@@ -1,0 +1,229 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./common.css";
+@import "./login.css";
+@import "./go_top_btn.css";
+
+/* 共用 */
+main.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div.menu_list{
+    /* border: 1px solid darkcyan; */
+    height: 100px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+@media screen and (min-width:768px) and (max-width:968px){
+    div.menu_list{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:767px){
+    div.menu_list{
+        margin-top: 30px;
+        height: 80px;
+    }
+}
+
+#menu_nav{
+    /* border: 1px solid red; */
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+}
+
+div.menu_list > ul > li{
+    display: inline-block;
+    font-size: 18px;
+    font-family: Pan-Pan;
+    /* border: 1px solid slateblue; */
+    background-color: var(--main_color);
+    padding: 5px 10px;
+    margin-left: 20px;
+    border-radius: 2px;
+}
+
+div.menu_list > ul > li:hover{
+    background-color: var(--point_color);
+}
+div.menu_list > ul > li > a{
+    text-decoration: none;
+    color: white
+    
+}
+div.title{
+    /* border: 1px solid red; */
+    font-family: Pan-Pan;
+    font-size: 30px;
+    color: var(--point_color);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+}
+/* 飲品 */
+
+div.drink{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top:30px;
+}
+
+    div.drink_pic{
+        /* border: 1px solid darkblue; */
+        width: 50%;
+        margin: auto auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    div.drink_pic > img{
+        width: 450px;
+    }
+    div.drink_menu{
+        /* border: 1px solid darkblue; */
+        width: 50%;
+    }
+    table{
+        width: 450px;
+        /* border: 1px solid red; */
+        margin: 20px auto;
+    }
+    tr{
+        /* border: 1px solid red; */
+        font-family: 微軟正黑體;
+    }
+    td{
+        /* border: 1px solid black; */
+        padding: 10px;
+        text-align: left;
+        font-size: 1.6rem;
+    }
+    @media screen and (min-width:768px) and (max-width:968px){
+        div.drink_pic > img{
+            width: 380px;
+        }
+        table{
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width:767px){
+        div.drink{
+            flex-wrap: wrap;
+        }
+        div.drink_pic{
+            width: 100%;
+        }
+        div.drink_pic > img{
+            width: 80%;
+        }
+        table{
+            width: 95%;
+        }
+        div.drink_menu{
+            width: 100%;
+        }
+        td{
+            font-size: calc(1.6*0.7);
+        }
+    }
+/* 甜點 */
+div.cake{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top:30px;
+}
+    div.cake_pic{
+        /* border: 1px solid darkblue; */
+        width: 50%;
+        overflow: hidden;
+        text-align: center;
+        margin: auto auto;
+    }
+    div.cake_pic > img{
+        width: 450px;
+    }
+    div.cake_menu{
+        /* border: 1px solid darkblue; */
+        width: 50%;
+        
+    }
+
+    @media screen and (min-width:768px) and (max-width:968px){
+        div.cake_pic > img{
+            width: 350px;
+        }
+    }
+
+    @media screen and (max-width:767px){
+        div.cake{
+            flex-wrap: wrap;
+        }
+        div.cake_pic{
+            width: 100%;
+        }
+        div.cake_pic > img{
+            width: 80%;
+        }
+        div.cake_menu{
+            width: 100%;
+        }
+    }
+/* 輕食 */
+div.meal{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px;
+    margin-bottom: 100px;
+}
+    div.meal_pic{
+        /* border: 1px solid darkblue; */
+        width: 50%;
+        overflow: hidden;
+        text-align: center;
+        margin: auto auto;
+    }
+    div.meal_pic > img{
+        width: 450px;
+    }
+    div.meal_menu{
+        /* border: 1px solid darkblue; */
+        width: 50%;
+    }
+    @media screen and (min-width:768px) and (max-width:968px){
+        div.meal_pic > img{
+            width: 350px;
+        }
+    }
+
+    @media screen and (max-width:767px){
+        div.meal{
+            flex-wrap: wrap;
+        }
+        div.meal_pic{
+            width: 100%;
+        }
+        div.meal_pic > img{
+            width: 80%;
+        }
+        div.meal_menu{
+            width: 100%;
+        }
+    }

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See It - 咖啡空間</title>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+    <!-- -------login開始------ -->
+    <div id="login_pop">
+        <button id="login_close"><img src="./img/close.svg"></button>
+        <div class="login_box">
+            <div id="logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt="">
+            </div>
+            <form id="login"action="">
+                <input id="id" type="text" placeholder="帳號"><br>
+                <input id="password" type="password" placeholder="密碼"><br>
+                <input id="loginSubmit" type="submit" value="登入"><br>
+                <div id="outerLogin">
+                    <button id="facebbokLogin">使用Facebook登入</button><br>
+                    <button id="googleLogin">Ｇoogle登入</button>
+                </div>
+            </form>
+            <div id="wantRegister">
+                <a href="">沒有帳號想要註冊嗎？</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------login結束--------- -->
+
+    <!-- 頁首 -->
+    <header class="header">   
+        <!-- logo -->
+        <nav class="menu">
+            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+            <div class="menu-logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt=""></a></div>
+        
+            <!-- 選單 -->
+            
+                <ul id="menuUl" class="active">
+                    <li class="current-active"><a href="./reservation.html">洗衣預約</a></li>
+                    <li><a href="./selfwashing.html">半自助洗衣</a></li>
+                    <li class="focus"><a href="./coffee.html">咖啡空間</a></li>
+                    <li><a href="./intro.html">店面資訊</a></li>
+                </ul>
+                
+            <div class="membership">
+                <a href="#"><img src="./img/membership.svg" alt=""></a>
+            </div>
+                    
+        </nav>
+    </header>
+
+    <!-- 內文 -->
+    <main class="main">
+        <!-- 上方選單 -->
+        <div class="menu_list">
+            <ul id="menu_nav">
+                <li><a href="#drink">飲品</a></li>
+                <li><a href="#cake">甜點</a></li>
+                <li><a href="#meal">輕食</a></li>
+            </ul>
+        </div>
+        <!-- 咖啡 -->
+        <div class="title" id="drink"><h2>飲品</h2></div>
+        <div class="drink">
+            <div class="drink_pic">
+                <img src="./img/menu/coffee-ad.jpg" alt="">
+            </div>
+
+            <div class="drink_menu">
+                <table>
+                    <tr>
+                        <td>莊園級美式</td>
+                        <td>Specialty Americano</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>莊園級拿鐵 </td>
+                        <td>Specialty Coffee Latte</td>
+                        <td>$95</td>
+                    </tr>
+                    <tr>
+                        <td style="color: var(--point_color);">巧克力可可盛宴慕斯咖啡</td>
+                        <td style="color: var(--point_color);"> Chocolate Crisp Smoothie Coffee</td>
+                        <td style="color: var(--point_color);">$55</td>
+                    </tr>
+                    <tr>
+                        <td>特濃小卡布(230ml)</td>
+                        <td>Piccolo</td>
+                        <td>$55</td>
+                    </tr>
+                    <tr>
+                        <td>精選英式紅茶</td>
+                        <td>British Tea</td>
+                        <td>$55</td>
+                    </tr>
+                    <tr>
+                        <td>貴妃荔枝紅茶</td>
+                        <td>Litchi Black Tea</td>
+                        <td>$55</td>
+                    </tr>
+                    <tr>
+                        <td>精選英式奶茶</td>
+                        <td>British Milk Tea</td>
+                        <td>$65</td>
+                    </tr>
+                    <tr>
+                        <td>精選英式紅茶拿鐵</td>
+                        <td>British Tea Latte</td>
+                        <td>$85</td>
+                    </tr>
+                    <tr>
+                        <td>四季翠玉青茶</td>
+                        <td>Turquoise tea</td>
+                        <td>$55</td>
+                    </tr>
+                    <tr>
+                        <td>檸檬綠茶</td>
+                        <td>Lemon Green Tea</td>
+                        <td>$65</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+       <!-- 甜點 -->
+       <div class="title" id="cake"><h2>甜點</h2></div>
+       <div class="cake">
+            <div class="cake_pic">
+                <img src="./img/menu/cake_ad.jpg" alt="">
+            </div>
+
+            <div class="cake_menu">
+                <table class="coffee">
+                    <tr>
+                        <td>覆盆子千層</td>
+                        <td>Raspberry Feuill</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr>
+                        <td>西尾抹茶千層</td>
+                        <td>Matcha Mille Crepes</td>
+                        <td>$160</td>
+                    </tr>
+                    <tr>
+                        <td>焦糖維蘇威</td>
+                        <td>Caramel Pear Cake</td>
+                        <td>$120</td>
+                    </tr>
+
+                    <tr>
+                        <td>微沐起士</td>
+                        <td>Cheese Cake</td>
+                        <td>$90</td>
+                    </tr>
+                    <tr>
+                        <td>法式烤布蕾</td>
+                        <td>Crème Brulee</td>
+                        <td>$90</td>
+                    </tr>
+                    <tr>
+                        <td style="color: var(--point_color);">粉紅莓果雛菊樂園</td>
+                        <td style="color: var(--point_color);">Pink Resberry Daisy Land</td>
+                        <td style="color: var(--point_color);">$180</td>
+                    </tr>
+                    <tr>
+                        <td>檸檬黑色幽默</td>
+                        <td>Lemon Chocolate</td>
+                        <td>$130</td>
+                    </tr>
+                    <tr>
+                        <td>天晴檸檬塔</td>
+                        <td>Lemon Tart</td>
+                        <td>$90</td>
+                    </tr>
+                    <tr>
+                        <td>芒夏之日</td>
+                        <td>Mango ＆ Pear Cake</td>
+                        <td>$180</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 輕食 -->
+        <div class="title" id="meal"><h2>輕食</h2></div>
+        <div class="meal">
+            <div class="meal_pic">
+                <img src="./img/menu/meal_ad.jpg" alt="">
+            </div>
+
+            <div class="meal_menu">
+                <table class="coffee">
+                    <tr>
+                        <td>墨西哥起士薄餅</td>
+                        <td>Quesadilla</td>
+                        <td>$180</td>
+                    </tr>
+                    <tr>
+                        <td>泰式打拋豬薄餅 </td>
+                        <td>Tortilla with Basil Pork</td>
+                        <td>$210</td>
+                    </tr>
+                    <tr>
+                        <td>迷迭香嫩雞佐滑蛋帕里尼</td>
+                        <td>Rosemary Chicken & Egg Panini</td>
+                        <td>$180</td>
+                    </tr>
+                    <tr>
+                        <td>酥烤蝦排帕里尼</td>
+                        <td>Prawn Cutlets Panini</td>
+                        <td>$220</td>
+                    </tr>
+                    <tr>
+                        <td>焙烤野菇總匯沙拉</td>
+                        <td>Mushrooms Salad</td>
+                        <td>$130</td>
+                    </tr>
+                    <tr>
+                        <td>黑椒凱薩雞肉沙拉</td>
+                        <td>Chicken Salad</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>南法煙燻鮭魚沙拉</td>
+                        <td>Smoked Salmon Salad</td>
+                        <td>$160</td>
+                    </tr>
+                    <tr>
+                        <td style="color: var(--point_color);">酪梨佐燻鮭魚酸奶吐司</td>
+                        <td style="color: var(--point_color);">Avacado Smokie Salmon Yougurt Toast</td>
+                        <td style="color: var(--point_color);">$180</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <button type="button" id="go_top" class="go_top_hide"><img src="./img/up-arrow.svg" alt=""></button>
+    </main>
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <ol class="footerlist">
+            <li><a href="./reservation.html">洗衣預約</a></li>
+            <li><a href="./selfwashing.html">半自助洗衣</a></li>
+            <li><a href="./coffee.html">咖啡空間</a></li>
+            <li><a href="./intro.html">店面資訊</a></li>
+        </ol>
+        <div class="list_sns">
+            <a href="#"><img src="./img/facebook_icon.svg" alt=""></a>
+            <a href="#"><img src="./img/line_icon.svg" alt=""></a>
+            <a href="#"><img src="./img/instagram_icon.svg" alt=""></a>
+       </div>
+       <p class="footer_text">© All Rights Reserved | See It 2020</p>
+</footer>
+
+
+ <!-- JS -->
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="./js/hanburger.js"></script>
+ <script src="./js/login.js"></script>
+ <script src="./js/resize.js"></script>
+ <script src="./js/menu.js"></script>
+</body>
+</html>

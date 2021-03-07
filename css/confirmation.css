@@ -1,0 +1,288 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./common.css";
+@import "./login.css";
+
+/* 共用 */
+main.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+span.line{
+    border: 2px solid var(--main_color);
+    width: 50%;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 10px;
+}
+::placeholder{
+    color: lightgray;
+    margin: 5px;
+}
+.input_border{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+/* 左側 */
+div.left{
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 45%;
+    margin-left: 4%;
+    height: 500px;
+    margin-top: 100px;
+    vertical-align: top;
+}
+h3.title{
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    
+}
+/* 購物明細 */
+div.purchase_detail{
+    width: 85%;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+div.product_pic{
+    /* border: 1px solid orchid; */
+    background-color: lightgray;
+    width: 40px;
+    height: 40px;
+    margin: auto 0 auto 10px;
+    border-radius: 360px;
+}
+div.product_name{
+    vertical-align: middle;
+    margin: auto 0px auto 50px;
+    flex-grow: 1;
+}
+div.product_price{
+    vertical-align: middle;
+    margin: auto 10px auto 10px;
+}
+
+/* 優惠券 */
+h3.coupon{
+    margin-top: 50px;
+}
+input.coupon{
+    /* border: 1px solid black; */
+    width: 85%;
+    height: 40px;
+    margin-left: 10px;
+}
+
+
+
+/* 右側 */
+div.right{
+    /* border: 1px solid blueviolet; */
+    display: inline-block;
+    width: 45%;
+    margin-left: 4%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+/* 地址 */
+h3.address{
+    margin-top: 50px;
+}
+select.location{
+    padding:5px;
+    margin: 10px;
+}
+input.address{
+    display: block;
+    width: 85%;
+    margin: 10px;
+}
+textarea.remark{
+    display: block;
+    width: 85%;
+    height: 80px;
+    margin-left: 10px;
+    resize: none;
+}
+
+/* 收送時間 */
+div.collection{
+    /* border: 1px solid red ; */
+    width: fit-content;
+    position: relative;
+    left:10px;
+    margin-top: 20px;
+}
+
+div.delivery{
+    /* border: 1px solid red; */
+    width: fit-content;
+    position: relative;
+    left:10px;
+    margin-top: 20px;
+}
+
+
+/* Temporary fix */
+
+.mbsc-cal-tabbed .mbsc-sc-whl-gr-c {
+    width: auto;
+    right: 0;
+}
+
+.mbsc-cal-tabbed .mbsc-sc-whl-gr {
+    width: auto;
+}
+
+/* 合計 */
+h3.total{
+    margin-left: 54%;
+}
+div.total{
+    /* border: 1px solid red; */
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    transform: translateX(-250%);
+
+}
+div.total > p{
+    font-size: 24px;
+}
+span.bottom_line{
+    width: 30%;
+    border: 2px solid var(--main_color);
+    display: block;
+    border-radius: 10px;
+    transform: translateX(13%);
+}
+/* 結帳 */
+div.payment{
+    /* border: 1px solid red; */
+    width: 140px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:767px){
+    /* 左側 */
+    div.left{
+        display: block;
+        width: 90%;
+        height: 450px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    h3.title{
+        text-align: center;
+    }
+    /* 購物明細 */
+    div.purchase_detail{
+        width: 85%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 5px;
+        
+    }
+
+    span.line{
+        border: 2px solid var(--main_color);
+        width: 50s%;
+        margin:0 auto;
+        margin-bottom: 20px;
+        display: block;
+        border-radius: 10px;
+    }
+    /* 右側 */
+    div.right{
+        display: block;
+        width: 90%;
+        height: 500px;
+        margin-top:10px;
+        text-align: center;
+    }
+
+    /* 地址 */
+    h3.address{
+        margin-top: 50px;
+    }
+    select.location{
+        padding:5px;
+        margin: 10px 0 ;
+    }
+    input.address{
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    textarea.remark{
+        display: block;
+        width: 85%;
+        height: 80px;
+        margin: 0 auto;
+        resize: none;
+    }
+
+    /* 收送時間 */
+    div.collection{
+        width: 100%;
+        margin-top: 20px;
+    }
+    #exampleTime{
+        font-size: 1.6rem;
+    }
+    #exampleDate{
+        font-size: 1.6rem;
+    }
+    div.delivery{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* 合計 */
+    h3.total{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    div.title{
+        font-size: 2rem;
+        margin: 0
+    }
+    span.bottom_line{
+        width: 50%;
+        border-radius: 10px;
+        transform: translateX(-50%);
+    }
+    div.total{
+        width: 100%;
+        margin:0px;
+        font-size: 0;
+        transform: translateX(0);
+
+    }
+    div.total > p{
+        font-size: 2.3rem;
+        width: fit-content;
+        margin:0 auto;
+        transform: translateX(-1%);
+
+    }
+    /* 結帳 */
+    div.payment{
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+}

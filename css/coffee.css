@@ -1,0 +1,453 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./common.css";
+@import "./login.css";
+
+button:focus{
+    outline: transparent;
+}
+.owl-carousel .owl-item img{
+    width: 100%;
+    padding: 3% 5% 0 5%;
+}
+.carousel-control-prev-icon{
+    background-image: none;
+    width: 40px;
+    height: 40px;
+}
+.carousel-control-next-icon{
+    background-image: none;
+    width: 40px;
+    height: 40px;
+}
+/* 空間服務 */
+div.service_title{
+    text-align: center;
+    margin-top:8%;
+}
+span.line{
+    display: block;
+    border: 1px solid #888;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+
+}
+div.service{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+div.service_pic{
+    /* border: 1px solid darkblue; */
+    width: 100px;
+    margin-left: 10%;
+}
+div.service_pic:first-child{
+    margin: 0;
+}
+div.service_pic_container{
+    width: 100px;
+    height: 100px;
+}
+div.service_pic > img{
+    height: 100%;
+}
+h4{
+    /* border: 1px solid blue; */
+    margin-top: 10px;
+    text-align: center;
+    font-family: Pan-Pan;
+}
+
+    @media screen and (min-width:768px) and (max-width:1140px){
+        div.service_pic{
+            width: 200px;
+        }
+        div.service_pic_container{
+            margin: 0 auto;
+        }
+        div.service{
+            margin-top: 3%;
+        }
+    }
+
+    @media screen and (min-width:568px) and (max-width:767px){
+        div.service{
+            margin-top: 10%;
+            justify-content: space-around;
+        }
+        div.service_pic{
+            width: 100px;
+            margin: 0;
+        }
+        div.service_pic_container{
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    @media screen and (max-width:568px){
+        
+        div.service{
+            margin: 3% 3%;
+            flex-wrap: nowrap;
+        }
+        div.service_pic{
+            margin: 0 3%;
+            padding-top: 10px;
+        }
+        div.service_pic_container{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        div.service_pic:first-child{
+            margin-right: 18px;
+            margin-left: 15px;
+        }
+        h4.service_info{
+            font-size: calc(2rem * 0.5);
+        }
+
+    }
+
+/* 本月咖啡 */
+div.monthCoffee{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+div.ad_pic{
+    /* border: 1px solid darkblue; */
+    width: fit-content;
+    text-align: right;   
+}
+div.ad_text{
+    /* border: 1px solid red; */
+    width: 500px;
+    text-align: center;
+}
+div.ad_text > h3{
+    margin-top: 15%;
+    color: rgb(19, 18, 18);
+}
+div.ad_text > h2{
+    font-size: 3rem;
+    margin-top: 1%;
+}
+div.ad_text > h4{
+    font-family: xiyuanti;
+    font-size: 1.8rem;
+}
+label{
+    /* border: 1px solid red; */
+    font-size: 1.8rem;
+    padding: 2% 0;
+}
+img.coffeeBean{
+    width: 30px;
+    height: 30px;
+    margin: 0 1px;
+}
+@media screen and (min-width:768px) and (max-width:1140px){
+    div.ad_text{
+        width: 500px;
+        text-align: center;
+    }
+    div.ad_text > h3{
+        margin-top: 5%;
+        color: rgb(19, 18, 18);
+    }
+    div.ad_text > h2{
+        font-size: 3rem;
+        margin-top: 1%;
+    }
+    span.line{
+        margin: 0 auto;
+    }
+    div.ad_text > h4{
+        font-family: xiyuanti;
+        font-size: 1.8rem;
+    }
+    label{
+        font-size: 1.8rem;
+        padding: 2% 0;
+    }
+    img.coffeeBean{
+        width: 25px;
+        height: 25px;
+        margin: 0 1px;
+    }
+}
+
+@media screen and (max-width:767px){
+    div.monthCoffee{
+        width: 100%;
+        margin-top: 5%;
+    }
+    div.ad_pic{
+        width: 70%;
+    }
+    div.ad_pic > div > img{
+        width: 100%;
+    }
+    div.ad_text{
+        width: 100%;
+        text-align: center;
+    }
+    div.ad_text > h3{
+        margin-top: 5%;
+        color: rgb(19, 18, 18);
+    }
+    span.line{
+        margin: 0 auto
+    }
+    div.ad_text > h2{
+        font-size: 2rem;
+        margin-top: 1%;
+    }
+    div.ad_text > h3{
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+    }
+    div.ad_text > h4{
+        font-family: xiyuanti;
+        font-size: 1.5rem;
+        margin:0;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    img.coffeeBean{
+        width: 25x;
+        height: 25px;
+        margin: 0 1px;
+    }
+}
+/* 菜單 */
+div.main_menu{
+    /* border: 1px solid seagreen; */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.menu_coffee{
+    width: 50%;
+    /* border: 2px solid darkblue; */
+    position: relative;
+    flex-grow: 1;
+
+}
+    @media screen and (min-width:768px) and (max-width:1140px){
+        div.main_menu{
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:767px){
+        div.main_menu{
+            width: 100%;
+            height: 380px;
+        }
+    }
+p.drink{
+    border: 2px solid white;
+    font-size: 4rem;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translateX(50%);
+    color: white;
+    padding: 10px 20px;
+    font-family: xiyuanti;
+    box-shadow:3px 3px 9px black;
+    text-shadow:3px 3px 9px black;
+}
+
+div.menu_coffee > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    position: relative;
+}
+div.coffee_cover{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+
+}
+div.coffee_cover:hover{
+    opacity: 10;
+
+}
+/* 右側 */
+div.right_side{
+    width: 50%;
+    /* border: 1px solid wheat; */
+    
+}
+/* 蛋糕 */
+div.menu_cakes{
+    /* border: 1px solid darkgoldenrod; */
+    position: relative;
+    width: 100%;
+    height: 50%
+}
+div.menu_cakes > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    position: relative;
+}
+div.cakes_cover{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+}
+div.cakes_cover:hover{
+    opacity: 10;
+}
+
+p.cakes{
+    border: 2px solid white;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 20px;
+    font-family: xiyuanti;
+    box-shadow:3px 3px 9px black;
+    text-shadow:3px 3px 9px black;
+}
+
+/* 輕食 */
+div.menu_meal{
+    /* border: 1px solid darkorchid */
+    position: relative;
+    height: 50%;
+    width: 100%;
+    
+}
+div.menu_meal > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+div.meal_cover{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+}
+div.meal_cover:hover{
+    opacity: 10;
+}
+
+p.meal{
+    border: 2px solid white;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 20px;
+    font-family: xiyuanti;
+    box-shadow:3px 3px 9px black;
+    text-shadow:3px 3px 9px black;
+}
+@media screen and (min-width:768px) and (max-width:1140px){
+    p.drink{
+        font-size: 2rem;
+    }
+    p.cakes{
+        font-size: 2rem;
+    }
+    p.meal{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    p.drink{
+        font-size: 1.5rem;
+    }
+    p.cakes{
+        font-size: 1.5rem;
+    }
+    p.meal{
+        font-size: 1.5rem;
+    }
+    div.service_title{
+        font-size: 3rem;
+    }
+}
+
+/* 店面資訊（手機版） */
+
+@keyframes locationShake {
+    0% {
+      transform: rotate(5deg);
+    }
+  
+    25% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+}
+
+#location{
+    display: none;
+    width: 60px;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    opacity: 1;
+    animation: locationShake 0.5s infinite;
+    
+}
+
+
+
+@media screen and (max-width:767px){
+    #location{
+        display: block;
+    }
+}

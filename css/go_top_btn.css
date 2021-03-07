@@ -1,0 +1,18 @@
+button.go_top_hide{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+}
+button.go_top_on{
+    display: block;
+}

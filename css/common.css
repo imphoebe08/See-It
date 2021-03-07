@@ -1,0 +1,104 @@
+/* 整體 */
+
+@font-face{
+    font-family: 'Pan-Pan';
+    font-display: auto;
+    src: url(../font/panpan.woff)
+}
+@font-face{
+    font-family: 'xiyuanti';
+    font-display: auto;
+    src: url(../font/xiyuanti.woff);
+}
+
+:root{
+    --point_color: #2a7475;
+    --main_color: #5ac0c2;
+    --header_height: 77px;
+    
+}
+html{
+    font-size: 10px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+h1{
+    font-weight: 100;
+    font-size: 5rem;
+    font-family: Pan-Pan;
+}
+h2{
+    font-weight: 200;
+    color: var(--point_color);
+    font-size: 4rem;
+    font-family: Pan-Pan;
+}
+h3{
+    font-weight: 100;
+    color: var(--point_color);
+    font-size: 3rem;
+    font-family: Pan-Pan;
+}
+h4{
+    font-weight: 600;
+    font-family: xiyuanti;
+    font-size: 2rem;
+    line-height: 4rem;
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1099px){
+    h1{
+        font-weight: 100;
+        font-size: calc(5rem * 0.9);
+        font-family: Pan-Pan;
+    }
+    h2{
+        font-weight: 200;
+        color: var(--point_color);
+        font-size: calc(4rem * 0.9);
+        font-family: Pan-Pan;
+    }
+    h3{
+        font-weight: 100;
+        color: var(--point_color);
+        font-size: calc(3rem * 0.9);
+        font-family: Pan-Pan;
+    }
+    h4{
+        font-weight: 600;
+        font-family: xiyuanti;
+        font-size: calc(2rem * 0.9);
+        line-height: calc(4rem * 0.9);
+        
+    }
+}
+@media screen and (max-width:767px){
+    h1{
+        font-weight: 100;
+        font-size: calc(5rem * 0.7);
+        font-family: Pan-Pan;
+    }
+    h2{
+        font-weight: 200;
+        color: var(--point_color);
+        font-size: calc(4rem * 0.7);
+        font-family: Pan-Pan;
+    }
+    h3{
+        font-weight: 100;
+        color: var(--point_color);
+        font-size: calc(3rem * 0.7);
+        font-family: Pan-Pan;
+    }
+    h4{
+        font-weight: 600;
+        font-family: xiyuanti;
+        font-size: calc(2rem * 0.7);
+        line-height: calc(4rem * 0.7);
+        
+    }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See It - 咖啡空間</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/selfwashing.css">
+</head>
+<body>
+    <!-- -------login開始------ -->
+    <div id="login_pop">
+        <button id="login_close"><img src="./img/close.svg"></button>
+        <div class="login_box">
+            <div id="logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt="">
+            </div>
+            <form id="login"action="">
+                <input id="id" type="text" placeholder="帳號"><br>
+                <input id="password" type="password" placeholder="密碼"><br>
+                <input id="loginSubmit" type="submit" value="登入"><br>
+                <div id="outerLogin">
+                    <button id="facebbokLogin">使用Facebook登入</button><br>
+                    <button id="googleLogin">Ｇoogle登入</button>
+                </div>
+            </form>
+            <div id="wantRegister">
+                <a href="">沒有帳號想要註冊嗎？</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------login結束--------- -->
+
+    <!-- 頁首 -->
+    <header class="header">   
+        <!-- logo -->
+        <nav class="menu">
+            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+            <div class="menu-logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt=""></a></div>
+        
+            <!-- 選單 -->
+            
+                <ul id="menuUl" class="active">
+                    <li class="current-active"><a href="./reservation.html">洗衣預約</a></li>
+                    <li class="focus"><a href="./selfwashing.html">半自助洗衣</a></li>
+                    <li><a href="./coffee.html">咖啡空間</a></li>
+                    <li><a href="./intro.html">店面資訊</a></li>
+                </ul>
+                
+            <div class="membership">
+                <a href="#"><img src="./img/membership.svg" alt=""></a>
+            </div>
+                    
+        </nav>
+    </header>
+
+    <!-- 內文 -->
+    <main class="main">
+        <!-- 什麼是半自助洗 -->
+            <div class="what_title">
+                <div class="title_inner">
+                    <h2 style="color: white;">什麼是半自助洗？</h2>
+                </div>
+            </div>
+        <!-- 半自助洗簡介 -->
+            <div class="what_content">
+                <div class="you">
+                    <div id="you_front" class="you_front"><p>您需要做什麼？</p></div>
+                    <fieldset class="you_back"><legend>You</legend>
+                        <div class="you_up">
+                            <div class="you_step1">
+                                <img src="./img/self_laundry/you_cloth.svg" alt="">
+                                <p class="you_step">Step1: 帶髒衣服來</p>
+                            </div>                        
+                            <div class="you_step2">
+                                <img src="./img/self_laundry/you_money.svg" alt="">
+                                <p class="you_step">Step2: 投幣洗衣</p>
+                            </div>
+                        </div>
+                            <div class="you_step3">
+                                <img src="./img/self_laundry/you_coffee.svg" alt="">
+                                <p class="you_step">Last Step：<br>喝咖啡休息</p>
+                            </div>
+                    </fieldset>
+                </div>
+
+                <div class="we">
+                    <div id="we_front" class="we_front"><p>我們替您做什麼？</p></div>
+                    <fieldset class="we_back"><legend>We</legend>
+                        <div class="we_up">
+                            <div class="we_wash">
+                                <img src="./img/self_laundry/we_wash.svg" alt="">
+                                <p class="you_step">洗衣服</p>
+                            </div>                        
+                            <div class="we_dry">
+                                <img src="./img/self_laundry/we_dry.svg" alt="">
+                                <p class="you_step">烘乾</p>
+                            </div>
+                            </div>
+                        <div class="we_down">
+                            <div class="we_fold">
+                                <img src="./img/self_laundry/we_cloth.svg" alt="">
+                                <p class="you_step">摺衣服</p>
+                            </div>                        
+                            <div class="we_collect">
+                                <img src="./img/self_laundry/we_collect.svg" alt="">
+                                <p class="you_step">等待您前來取件</p>
+                            </div>
+                        </fieldset>
+                </div>
+            </div>
+        
+        <!-- 價目表 -->
+            <div class="price_title">
+                <div class="title_inner">
+                    <h2 style="color: white;">價目表</h2>
+                </div>
+            </div>
+
+            <div class="price_content owl-carousel owl-theme">
+            <!-- 大容量 -->
+                <div class="l">
+                    <div class="l_img" data-aos="fade-up" duration="3000">
+                    <img src="./img/self_laundry/washing_machine_L.png" alt="">
+                    </div>
+
+                    <div class="l_price" data-aos="zoom-in-right" duration="3000" data-aos-offset="0">
+                        <p class="price">Ｌ尺寸：$ 250</p>
+                        <p class="price">(約可容納40條毛巾)</p>
+                    </div>
+                </div>
+            <!-- 中容量 -->
+                <div class="m">
+                    <div class="m_img" data-aos="fade-up" duration="3000" data-aos-delay="500">
+                    <img src="./img/self_laundry/washing_machine_M.png" alt="">
+                    </div>
+    
+                    <div class="m_price" data-aos="zoom-in-right" duration="3000" data-aos-delay="500" data-aos-offset="0">
+                    <p class="price">M尺寸：$200</p>
+                    <p class="price">(約可容納25條毛巾)</p>
+                    </div>
+                </div>
+
+            <!-- 烘乾 -->
+                <div class="dryer">
+                    <div class=dryer_img data-aos="fade-up" duration="3000" data-aos-delay="1000" >
+                        <img src="./img/self_laundry/Dryer.png" alt="">
+                    </div>
+                    <div class="dryer_price" data-aos="zoom-in-right" duration="3000" data-aos-delay="1000" data-aos-offset="0">
+                    <p class="price">烘乾機</p>
+                    <p class="price">L尺寸：100元</p>
+                    <p class="price">Ｍ尺寸：80元</p>
+                    </div>
+                </div>
+            
+                
+            </div>
+            <!-- 服務時間 -->
+            <div class="service_time">
+                <span class="line"></span>
+                <br>
+                <h4>上述價格皆已含專人服務</h4><br>
+                <br>
+                <h4>專人服務時間：11:00 am  - 20:00 pm</h4><br>
+                <h4>自助洗衣開放時間：24hr</h4>
+                <span class="line_noMargin"></span>
+             </div>
+
+        <!-- 置物箱取件服務 -->
+            <div class="locker_title">
+                <div class="title_inner">
+                    <h2 style="color: white;">置物箱取件服務</h2>
+                </div>
+            </div>
+            <div class="locker_subtitle">
+                <h3 class="locker_subtitle" data-aos="zoom-in-right" duration="3000">想要享受專人服務，<span class="text_cut">又不方便在專人服務時間前來取件？</span></h3>
+            </div>
+        <!-- 置物箱使用 -->
+            <div class="locker_content">
+                <div class="locker_img">
+                    <img src="./img/self_laundry/7f0bbd6e674f8d80a16a13f662497ad5.jpg" alt="">
+                </div>
+                <div class="locker_explaination">
+                    <br>
+                    <br>
+                    <h4 class="step_h4">Step1：把衣服送來店面</h4>
+                    <h4 class="step_h4">Step2：留下連絡電話</h4>
+                    <br>
+                    <span class="line_2"></span>
+                    <br>
+                    <br>
+                    <h4>服務人員會將清洗好的衣物放至置物櫃</h4>
+                    <h4 style="color: var(--point_color);">收到簡訊通知「取件密碼」</h4>
+                    <h4 style="color: var(--point_color);">就可以隨時前來取件囉！</h4>
+                </div>
+            </div>
+
+    </main>
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <ol class="footerlist">
+            <li><a href="./reservation.html">洗衣預約</a></li>
+            <li><a href="./selfwashing.html">半自助洗衣</a></li>
+            <li><a href="./coffee.html">咖啡空間</a></li>
+            <li><a href="./intro.html">店面資訊</a></li>
+        </ol>
+        <div class="list_sns">
+            <a href="#"><img src="./img/facebook_icon.svg" alt=""></a>
+            <a href="#"><img src="./img/line_icon.svg" alt=""></a>
+            <a href="#"><img src="./img/instagram_icon.svg" alt=""></a>
+       </div>
+       <p class="footer_text">© All Rights Reserved | See It 2020</p>
+</footer>
+
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="./js/owl.carousel.min.js"></script>
+ <script src="./js/hanburger.js"></script>
+ <script src="./js/login.js"></script>
+ <script src="./js/resize.js"></script>
+ <script src="./js/selfwashing.js"></script>
+ 
+</body>
+</html>

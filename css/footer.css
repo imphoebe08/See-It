@@ -1,0 +1,59 @@
+/* 頁尾 */
+footer.footer{
+    border:1px solid darkgoldenrod;
+    background-color: #2a7475;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+ol.footerlist{
+    font-size: 1.6rem;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    font-family: Pan-Pan;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+ol.footerlist > li{
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+ol.footerlist > li > a{
+    color: white;
+    text-decoration: none;
+
+}
+div.list_sns{
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+div.list_sns > a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: top;
+    margin-left: 5px;
+}
+p.footer_text{
+    text-align: center;
+    color: white;
+    font-family: Noto;
+}
+
+@media screen and (max-width: 767px){
+    .footer{
+        width: 100%;
+    }
+    .footerlist{
+        display: none;
+    }
+    .list_sns{
+        padding-top: 30px;
+    }
+}

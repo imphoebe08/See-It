@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See It - 洗衣預約</title>
+    <!-- 動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/reservation.css">
+</head>
+<body>
+    <!-- -------login開始------ -->
+    <div id="login_pop">
+        <button id="login_close"><img src="./img/close.svg"></button>
+        <div class="login_box">
+            <div id="logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt="">
+            </div>
+            <form id="login"action="">
+                <input id="id" type="text" placeholder="帳號"><br>
+                <input id="password" type="password" placeholder="密碼"><br>
+                <input id="loginSubmit" type="submit" value="登入"><br>
+                <div id="outerLogin">
+                    <button id="facebbokLogin">使用Facebook登入</button><br>
+                    <button id="googleLogin">Ｇoogle登入</button>
+                </div>
+            </form>
+            <div id="wantRegister">
+                <a href="">沒有帳號想要註冊嗎？</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------login結束--------- -->
+
+    <!-- 頁首 -->
+    <header class="header">   
+        <!-- logo -->
+        <nav class="menu">
+            <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+            <div class="menu-logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt=""></a></div>
+        
+            <!-- 選單 -->
+            
+                <ul id="menuUl" class="active">
+                    <li class="current-active focus"><a href="./reservation.html">洗衣預約</a></li>
+                    <li><a href="./selfwashing.html">半自助洗衣</a></li>
+                    <li><a href="./coffee.html">咖啡空間</a></li>
+                    <li><a href="./intro.html">店面資訊</a></li>
+                </ul>
+                
+            <div class="membership">
+                <a href="#"><img src="./img/membership.svg" alt=""></a>
+            </div>
+                    
+        </nav>
+    </header>
+    
+    <!-- 內容 -->
+    <main class="main">
+        <!-- 選擇洗衣袋標題 -->
+        <div class="bags_title"><h1>選擇洗衣袋大小</h1></div>
+        <div id="bags" class="bags owl-carousel owl-theme">
+            <!-- S號 -->
+            <div class="bag_s">
+                <div class="bag_s_title">
+                    <h2>S<br></h2><p class="liter">（8公升）</p> 
+                </div>  
+                    <div class="bag_s_pic">
+                        <img src="./img/reservation/bag_s.png" alt="">
+                    </div>
+                    
+                    <!-- 購物按鍵 -->
+                    <div class="big_buy">
+                        <p class="bag_price">NTD 480</p>
+                        <button class="big_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                        <input type="text" id="carValue" class="big_quantity" value="0">
+                        <button class="big_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        <button class="big_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt=""></button>
+                    </div>
+            </div>
+
+            <!-- M號 -->
+            <div class="bag_m">
+                <div class="bag_m_title">
+                    <h2>M <br></h2><p class="liter">（13公升）</p> 
+                </div>
+
+                <div class="bag_m_pic">
+                    <img src="./img/reservation/bag_m.png" alt="">
+                </div>
+                
+                <!-- 購物按鍵 -->
+                <div class="big_buy">
+                    <p class="bag_price">NTD 680</p>
+                    <button class="big_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                    <input type="text" class="big_quantity" value="0">
+                    <button class="big_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                    <button class="big_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt=""></button>
+                </div>
+            </div>
+
+            <!-- L號 -->
+            <div class="bag_l">
+                <div class="bag_l_title">
+                    <h2>L <br></h2><p class="liter">（18公升）</p> 
+                </div>
+
+                <div class="bag_l_pic">
+                    <img src="./img/reservation/bag_l.png" alt="">
+                </div>
+                <!-- 購物按鍵 -->
+                <div class="big_buy">
+                    <p class="bag_price">NTD 880</p>
+                    <button class="big_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                    <input type="text" class="big_quantity" value="0">
+                    <button class="big_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                    <button class="big_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 升級洗劑 -->
+        <div class="detergent_upgrade">
+            <fieldset class="detergent_upgrade">
+                <legend>升級洗劑</legend>
+                <div class="add_detergent">
+                    <img src="./img/reservation/eco-store_sensitive_detergent_500ml.jpg" alt="">
+                     <div class="add_buy">
+                        <h4>Ecostore抗敏洗衣精</h4>
+                        <p class="bag_price">NTD 30/次</p>
+                        <button class="add_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                        <input type="text" class="add_quantity" value="0">
+                        <button class="add_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        <button class="add_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="add_softner">
+                    <img src="./img/reservation/eco-store_sensitive_softner_500ml.jpg" alt="">
+                    <div class="add_buy">
+                        <h4>Ecostore抗敏柔軟精</h4>
+                        <p class="bag_price">NTD 30/次</p>
+                        <button class="add_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                        <input type="text" class="add_quantity" value="0">
+                        <button class="add_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        <button class="add_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt=""></button>
+                    </div>
+                </div>
+            </fieldset>
+        <!-- 加購商品 -->
+        </div>
+        <div class="products_title"><h1>加購相關商品</h1></div>
+        <div class="series_button">
+            <button class="ecostore_series_icon"><img src="./img/reservation/ecostore_series_icon.svg" alt=""></button>
+            <button class="washing_items_icon"><img src="./img/reservation/washing_items_icon.svg" alt=""></button>
+        </div>
+        <!-- 商品卡 -->
+        <div class="content_container">
+            <div class="content1 -on">
+                <ul class="prodcuts">
+                    <!-- 1 -->
+                    <li class="other_products">
+                        <div class="products_card">
+                            <div class="product_img"><img src="./img/reservation/products/ecostore_detergent_2l.jpg" alt=""></div>         
+                            <div class="prodcuts_name_title"><span class="products_name">天然環保洗衣精</span><span class="prodcuts_name_eng">2L</span>
+                                <p class="bag_price">＄980</p>
+                            </div>
+                            
+                            <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                            </div> 
+                            <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                                <input type="hidden" value="ecostore_detergent_2l"></span>
+                        </div>
+                    </li>
+
+                    <!-- 2 -->
+                    <li class="other_products">
+                        <div class="products_card">
+                            <div class="product_img"><img src="./img/reservation/products/ecostore_softerner_500ml.png" alt=""></div>
+                            <div class="prodcuts_name_title"><span class="products_name">天然環保柔軟精</span><span class="prodcuts_name_eng">500ml</span>
+                                <p class="bag_price">＄980</p>
+                            </div>
+            
+                            <div class="products_quantity_bar">
+                                <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                                <input type="text" class="products_quantity" value="0">
+                                <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                            </div> 
+                            <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                                <input type="hidden" value="ecostore_softerner_500ml"></span>
+                        </div>
+                    </li>
+
+                    <!-- 3 -->
+                    <li class="other_products">
+                        <div class="products_card">
+                            <div class="product_img"><img src="./img/reservation/products/ecostore_sensitive_detergent_500ml.png" alt=""></div>
+                            <div class="prodcuts_name_title"><span class="products_name">抗敏洗衣精</span><span class="prodcuts_name_eng">500ml</span>
+                                <p class="bag_price">＄980</p>
+                            </div>
+            
+                            <div class="products_quantity_bar">
+                                <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                                <input type="text" class="products_quantity" value="0">
+                                <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                            </div> 
+                            <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                                <input type="hidden" value="ecostore_sensitive_detergent_500ml"></span>
+                        </div>
+                    </li>
+
+                    <!-- 4 -->
+                    <li class="other_products">
+                        <div class="products_card">
+                            <div class="product_img"><img src="./img/reservation/products/ecostore_sensitvie_softner_500ml.png" alt=""></div>
+                            <div class="prodcuts_name_title"><span class="products_name">抗敏柔軟精</span><span class="prodcuts_name_eng">500ml</span>
+                                <p class="bag_price">＄980</p>
+                            </div>
+            
+                            <div class="products_quantity_bar">
+                                <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                                <input type="text" class="products_quantity" value="0">
+                                <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                            </div> 
+                            <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                                <input type="hidden" value="ecostore_sensitvie_softner_500ml"></span>
+                        </div>
+                    </li>
+
+                    <!-- 5 -->
+                    <li class="other_products">
+                        <div class="products_card">
+                            <div class="product_img"><img src="./img/reservation/products/ecostore_orange_detergent_2l.jpg" alt=""></div>
+                            <div class="prodcuts_name_title"><span class="products_name">天竺葵柑橘洗衣精</span><span class="prodcuts_name_eng">2L</span>
+                                <p class="bag_price">＄980</p>
+                            </div>
+            
+                            <div class="products_quantity_bar">
+                                <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                                <input type="text" class="products_quantity" value="0">
+                                <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                            </div> 
+                            <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                                <input type="hidden" value="ecostore_orange_detergent_2l"></span>
+                        </div>
+                    </li>
+
+                    <!-- 6 -->
+                    <li class="other_products">
+                        <div class="products_card">
+                            <div class="product_img"><img src="./img/reservation/products/ecostore_orange_detergent_500ml.png" alt=""></div>
+                            <div class="prodcuts_name_title"><span class="products_name">天竺葵柑橘洗衣精</span><span class="prodcuts_name_eng">500ml</span>
+                                <p class="bag_price">＄980</p>
+                            </div>
+            
+                            <div class="products_quantity_bar">
+                                <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                                <input type="text" class="products_quantity" value="0">
+                                <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                            </div> 
+                            <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                                <input type="hidden" value="ecostore_orange_detergent_500ml"></span>
+                        </div>
+                    </li>
+
+                    <!-- 7 -->
+                    <li class="other_products">
+                        <div class="products_card">
+                            <div class="product_img"><img src="./img/reservation/products/ecostore_baby_detergent_500ml.jpg" alt=""></div>
+                            <div class="prodcuts_name_title"><span class="products_name">天然低敏嬰兒洗衣精</span><span class="prodcuts_name_eng">500ml</span>
+                                <p class="bag_price">＄980</p>
+                            </div>
+            
+                            <div class="products_quantity_bar">
+                                <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                                <input type="text" class="products_quantity" value="0">
+                                <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                            </div> 
+                            <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                                <input type="hidden" value="ecostore_baby_detergent_500ml"></span>
+                        </div>
+                    </li>
+
+                    <!-- 8 -->
+                    <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/products/ecostore_detergent_500ml.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">天然環保洗衣精</span><span class="prodcuts_name_eng">500ml</span>
+                            <p class="bag_price">＄980</p>
+                        </div>
+
+                        <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                            <input type="hidden" value="ecostore_detergent_500ml"></span>
+                    </div>
+                    </li>
+
+                    <!-- 9 -->
+                    <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/products/ecostore_orange_wash_powder_1kg.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">天竺葵柑橘洗衣粉</span><span class="prodcuts_name_eng">1kg</span>
+                            <p class="bag_price">＄980</p>
+                        </div>
+
+                        <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                            <input type="hidden" value="ecostore_orange_wash_powder_1kg"></span>
+                    </div>
+                    </li>
+                    
+                    <!-- 10 -->
+                    <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/products/ecostore_sensitive_wash_powder_1kg.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">抗敏洗衣粉</span><span class="prodcuts_name_eng">1kg</span>
+                            <p class="bag_price">＄980</p>
+                        </div>
+
+                        <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                        <input type="hidden" value="ecostore_sensitive_wash_powder_1kg"></span>
+                    </div>
+                    </li>
+                </ul>
+        </div>
+
+        <div class="content2">
+            <ul class="prodcuts">
+                <!-- 1 -->
+                <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/washing_items/clips.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">曬衣夾</span><span class="prodcuts_name_eng"></span>
+                            <p class="bag_price">＄89</p>
+                        </div>
+                        
+                        <div class="products_quantity_bar">
+                        <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                        <input type="text" class="products_quantity" value="0">
+                        <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                            <input type="hidden" value="ecostore_detergent_2l"></span>
+                    </div>
+                </li>
+
+                <!-- 2 -->
+                <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/washing_items/multi_clips_S.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">全不鏽鋼角型衣架（小）</span><span class="prodcuts_name_eng"></span>
+                            <p class="bag_price">＄1080</p>
+                        </div>
+        
+                        <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                            <input type="hidden" value="ecostore_softerner_500ml"></span>
+                    </div>
+                </li>
+
+                <!-- 3 -->
+                <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/washing_items/multi_clips_L.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">全不鏽鋼角型衣架（大）</span><span class="prodcuts_name_eng"></span>
+                            <p class="bag_price">＄1480</p>
+                        </div>
+        
+                        <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                            <input type="hidden" value="ecostore_sensitive_detergent_500ml"></span>
+                    </div>
+                </li>
+
+                <!-- 4 -->
+                <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/washing_items/hanger.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">便攜型衣架</span><span class="prodcuts_name_eng"></span>
+                            <p class="bag_price">＄200</p>
+                        </div>
+        
+                        <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                            <input type="hidden" value="ecostore_sensitvie_softner_500ml"></span>
+                    </div>
+                </li>
+
+                <!-- 5 -->
+                <li class="other_products">
+                    <div class="products_card">
+                        <div class="product_img"><img src="./img/reservation/washing_items/home_hanger.jpg" alt=""></div>
+                        <div class="prodcuts_name_title"><span class="products_name">居家超輕型鋁製曬衣架</span><span class="prodcuts_name_eng"></span>
+                            <p class="bag_price">＄1200</p>
+                        </div>
+        
+                        <div class="products_quantity_bar">
+                            <button class="products_plus"><img src="./img/reservation/plus.svg" alt=""></button>
+                            <input type="text" class="products_quantity" value="0">
+                            <button class="products_minus"><img src="./img/reservation/minus.svg" alt=""></button>
+                        </div> 
+                        <span class="products_add_basket addButton"><img src="./img/reservation/add_basket.svg" alt="">
+                            <input type="hidden" value="ecostore_orange_detergent_2l"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 下一頁 -->
+        <div class="next_step">
+            <a href="confrimation.html"><img src="./img/next step.svg" alt=""></a>
+        </div>
+    
+    <!--   購物車     -->
+    <div class="car">
+        <button class="basketClick">
+          <img class="basket" src="./img/reservation/basket.svg" alt="" srcset="">
+        </button>
+        <!--     小圈圈     -->
+        <span class="count">10</span>
+    </div>
+    <div class="right_sidebar">
+        <button type="button" class="btn_close"><img src="./img/close.svg" alt=""></button>
+        <ul id="shoppingList">
+            <li>L號洗衣袋<div class="itemPrice">$980</div><div class="removeItem"><img src="./img/close.svg" alt=""></div></li>
+            <li>加購抗敏洗衣精<div class="itemPrice">$30</div><div class="removeItem"><img src="./img/close.svg" alt=""></div></li>
+            <li>天然環保洗衣精<div class="itemPrice">$980</div><div class="removeItem"><img src="./img/close.svg" alt=""></div></li>
+            <li>全不鏽鋼角型衣架（大）<div class="itemPrice">$1480</div><div class="removeItem"><img src="./img/close.svg" alt=""></div></li>
+        </ul>
+      </div>
+    </main>
+    
+    <!-- 頁尾 -->
+        <footer class="footer">
+            <ol class="footerlist">
+                <li><a href="./reservation.html">洗衣預約</a></li>
+                <li><a href="./selfwashing.html">半自助洗衣</a></li>
+                <li><a href="./coffee.html">咖啡空間</a></li>
+                <li><a href="./intro.html">店面資訊</a></li>
+            </ol>
+            <div class="list_sns">
+                <a href="#"><img src="./img/facebook_icon.svg" alt=""></a>
+                <a href="#"><img src="./img/line_icon.svg" alt=""></a>
+                <a href="#"><img src="./img/instagram_icon.svg" alt=""></a>
+           </div>
+           <p class="footer_text">© All Rights Reserved | See It 2020</p>
+        </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/hanburger.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/shoppingCart.js"></script>
+    <script src="./js/reservation.js"></script>
+
+
+</body>
+</html>
